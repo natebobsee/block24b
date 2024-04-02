@@ -12,7 +12,7 @@ function App() {
   function handleClick() {
      setFeatPupId(id)
     console.log(id)
-    featPupID=id;
+    featPupId=id;
     featuredPup = puppies.find((pup)=> pup.id === featPupId)
     // some logic here
   }
@@ -33,7 +33,7 @@ function App() {
       })}
           {featPupId && (
         <div>
-          {/* <h2>{featuredPup.name}</h2> */}
+          <h2>{featuredPup.name}</h2>
           <ul>
             <li>Age: {featuredPup.age}</li>
             <li>Email: {featuredPup.email}</li>
